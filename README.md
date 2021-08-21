@@ -2,7 +2,8 @@
 An efficient network architecture for human pose estimation
 
 ## News
-[2021/7/1] Code and pretrained models are public available, the paper is under review.
+[2021/7/1] Code and pretrained models are public available.
+[2021/7/26] Our paper "Estimating Human Pose Efficiently by Parallel Pyramid Networks" is published on TIP.
 
 ## Introduction
 Parallel Pyramid Network (PPNet) features separating spatial location preserving from semantic information acquisition in architecture design. With this unique design, superior performance is able to be delivered by using less parameters and GFLOPs comparing to the existing network architectures in the literature. </br>
@@ -170,10 +171,15 @@ python tools/train.py --cfg experiments/mpii/ppnet/M4_D2_W32_256x256_rms_lr25e-4
 ### Citation
 If you use our code or models in your research, please cite with:
 ```
-@article{zhao2021ppnet,
-  title={Estimating Human Pose Efficiently by Parallel Pyramid Networks},
-  year={2021}
-}
+@ARTICLE{zhao-ppnet,
+  author={Zhao, Lin and Wang, Nannan and Gong, Chen and Yang, Jian and Gao, Xinbo},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Estimating Human Pose Efficiently by Parallel Pyramid Networks}, 
+  year={2021},
+  volume={30},
+  number={},
+  pages={6785-6800},
+  doi={10.1109/TIP.2021.3097836}}
 ```
 
 ### Acknowledgement
