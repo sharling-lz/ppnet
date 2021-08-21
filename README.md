@@ -2,7 +2,8 @@
 An efficient network architecture for human pose estimation
 
 ## News
-[2021/7/1] Code and pretrained models are public available.\\
+[2021/7/1] Code and pretrained models are public available.
+
 [2021/7/26] Our paper "Estimating Human Pose Efficiently by Parallel Pyramid Networks" is published on TIP.
 
 ## Introduction
