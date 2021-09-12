@@ -1,5 +1,5 @@
 # Estimating Human Pose Efficiently by Parallel Pyramid Networks
-An efficient network architecture for human pose estimation
+An efficient network architecture for human pose estimation. Comparing to HRNet, PPNet gets the same top performance (76.3AP) with much less params(27.1M Vs 63.6M) and GFlops (20.6 Vs 30.9).
 
 ## News
 [2021/7/1] Code and pretrained models are public available.
