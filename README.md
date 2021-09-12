@@ -31,11 +31,13 @@ Parallel Pyramid Network (PPNet) features separating spatial location preserving
 | HRNet W32          |     Y      |   256x192 | 28.5M   |    7.1 |100 samples/s | 0.744 | 0.905 |  0.819 | 
 | HRNet W32          |     Y      |   384x288 |         |   16.0 | 50 samples/s | 0.758 | 0.906 |  0.827 |
 | HRNet W48          |     N      |   384x288 | 63.6M   |   32.9 | 32 samples/s | 0.750 | 0.900 |  0.819 | 
+| HRNet W48          |     Y      |   384x288 |         |        | 32 samples/s | 0.763 | 0.908 |  0.829 | 
 | **PPNet M2-D2-W32**|     Y      |   256x192 |  7.0M   |    3.3 |235 samples/s | 0.721 | 0.890 |  0.795 |
 | **PPNet M2-D2-W32**|     Y      |   384x288 |         |    7.5 |110 samples/s | 0.738 | 0.897 |  0.804 | 
 | **PPNet M4-D2-W32**|     Y      |   256x192 | 12.7M   |    5.0 |150 samples/s | 0.738 | 0.898 |  0.811 | 
 | **PPNet M4-D2-W32**|     Y      |   384x288 |         |   11.3 | 75 samples/s | 0.757 | 0.901 |  0.822 |
 | **PPNet M4-D2-W48**|     N      |   384x288 | 27.1M   |   20.6 | 53 samples/s | 0.755 | 0.898 |  0.821 |
+| **PPNet M4-D2-W48**|     Y      |   384x288 |         |        | 53 samples/s | 0.763 | 0.903 |  0.827 |
 | **PPNet M4-D3-W48**|     N      |   384x288 | 39.2M   |   28.1 | 42 samples/s | 0.758 | 0.900 |  0.824 |
 
 ### Note:
