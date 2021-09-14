@@ -1,5 +1,5 @@
 # Estimating Human Pose Efficiently by Parallel Pyramid Networks
-An efficient network architecture for human pose estimation. Comparing to HRNet, PPNet gets the same top performance (76.3AP) with much less params(27.1M Vs 63.6M) and GFlops (20.6 Vs 30.9).
+An efficient network architecture for human pose estimation. Comparing to HRNet, without any tricks, PPNet gets better result on coco test-dev2017 (75.6AP_PPNet vs 75.5AP_HRNet) with much less params(27.1M Vs 63.6M) and GFlops (20.6 Vs 30.9).
 
 ## News
 [2021/7/1] Code and pretrained models are public available.
@@ -23,6 +23,20 @@ Parallel Pyramid Network (PPNet) features separating spatial location preserving
 - Input size is 256x256
 - All models are pretrained on ImageNet
 
+### Results on COCO test-dev2017
+| Backbone           | Pretrain   |Input size | #Params | GFLOPs | Train speed  |    AP | Ap .5 | AP .75 | 
+|--------------------|------------|-----------|---------|--------|------------- |-------|-------|--------|
+| SB ResNet-152      |     Y      |   256x192 | 68.6M   |   35.6 | 45 samples/s | 0.737 | 0.919 |  0.811 |
+| HRNet W48          |     Y      |   384x288 | 63.6M   |   32.9 | 32 samples/s | 0.755 | 0.925 |  0.833 | 
+| **PPNet M4-D2-W48**|     Y      |   384x288 | 27.1M   |   20.6 | 53 samples/s | 0.756 | 0.924 |  0.831 |
+
+### Note:
+- Flip test is used.
+- Person detector has person AP of 60.9 on COCO test-dev2017 dataset.
+- GFLOPs is for convolution and linear layers only.
+- The training speed is obtained on a machine with one NVIDIA 2080Ti GPU
+- The same standard data augmentation and data processing are used during training and testing. 
+
 ### Results on COCO val2017
 | Backbone           | Pretrain   |Input size | #Params | GFLOPs | Train speed  |    AP | Ap .5 | AP .75 | 
 |--------------------|------------|-----------|---------|--------|------------- |-------|-------|--------|
@@ -45,6 +59,7 @@ Parallel Pyramid Network (PPNet) features separating spatial location preserving
 - Person detector has person AP of 56.4 on COCO val2017 dataset.
 - GFLOPs is for convolution and linear layers only.
 - The training speed is obtained on a machine with one NVIDIA 2080Ti GPU
+- The same standard data augmentation and data processing are used during training and testing.
 
 ## Environment
 The code is developed using python 3.6 on Ubuntu 18.04. NVIDIA GPUs are needed. The code is developed and tested using 1 NVIDIA 2080Ti GPU.
